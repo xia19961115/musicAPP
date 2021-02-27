@@ -1,0 +1,131 @@
+{
+	"pages": [ 
+		// {
+		//     "path" : "pages/tabber/login",
+		//     "style" :                                                                                    
+		//     {
+		//         "navigationBarTitleText": "",
+		//         "enablePullDownRefresh": false
+		//     }
+		    
+		// },
+		{
+			"path": "pages/tabber/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}
+	    ,{
+            "path" : "pages/tabber/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabber/video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "视频",
+				"navigationBarTextStyle":"white",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"default",
+				"navigationBarBackgroundColor":"#5E00FF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/songsheet",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/songslist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/dj",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/rank",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/player",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#FF9700",
+		"navigationStyle":"custom",
+		"app-plus":{
+			"bounce":"none",
+			"animationType":"slide-in-right",
+			"animationDuration":300
+		}
+	},
+	"tabBar":{
+		"list":[
+			{
+				"pagePath": "pages/tabber/home",
+				"iconPath": "static/discover1.png",
+				"selectedIconPath": "static/discover2.png",
+				"text": "发现"
+			},
+			{
+				"pagePath":"pages/tabber/login",
+				"iconPath":"static/user1.png",
+				"selectedIconPath":"static/user2.png",
+				"text":"我的"
+			}
+		],
+		"midButton":{
+				"pagePath": "pages/tabbar/video",
+				"text": "视频",
+				"iconPath": "static/video.png",
+				"width": "60px",
+				"height": "60px",
+				"iconWidth": "40px"
+		}
+	}
+}

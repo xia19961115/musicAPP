@@ -1,0 +1,1 @@
+<view class="songsheetSlot"><slot name="songsheetCate"></slot><slot name="songsheetItem"></slot></view>

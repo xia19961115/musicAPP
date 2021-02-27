@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "home-app-bar": "/components/home/HomeAppBar",
+    "home-banner": "/components/home/HomeBanner",
+    "category": "/components/home/Category"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="data-v-3ac05bd2"><block wx:if="{{poster!=''}}"><video class="video data-v-3ac05bd2" poster="{{poster}}" src="{{video.url}}" object-fit="cover" controls="{{true}}" show-mute-btn="{{true}}" enable-play-gesture="{{true}}"></video></block></view>
