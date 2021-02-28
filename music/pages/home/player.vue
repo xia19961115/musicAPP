@@ -38,6 +38,7 @@
 				:value="currentTime"
 				:max="duration"
 				min='0'
+				@change="handleGoseek"
 				block-size='12'
 				 ></slider>
 				<text class="duration-time">{{duration|handleDate}}</text>
@@ -116,6 +117,13 @@
 				if(new Date()- this.timer<500 ) return
 				this.timer =new Date()
 				this.show= !this.show
+			},
+			//进度事件
+			handleGoseek:function(e){
+				// console.log(e.detail.value);
+				// return e.detail.value
+				this.audioContext.seek(e.detail.value)
+				e.detail.value= this.currentTime
 			},
 			//暂停
 			handlePause: function(){
