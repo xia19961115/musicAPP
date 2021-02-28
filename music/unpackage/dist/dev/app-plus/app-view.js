@@ -284,7 +284,12 @@ var render = function() {
                       "v-uni-view",
                       {
                         staticClass: _svm._$g("8-" + _si, "sc"),
-                        attrs: { _i: "8-" + _si }
+                        attrs: { _i: "8-" + _si },
+                        on: {
+                          click: function($event) {
+                            return _vm.$handleViewEvent($event)
+                          }
+                        }
                       },
                       [_vm._v("查看更多")]
                     )

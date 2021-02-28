@@ -7,7 +7,7 @@
 			<template v-slot:songsheetCate>
 				<view class="songsheet-cate">
 					<view class="title">精品歌单</view>
-					<view class="lookMore">查看更多</view>
+					<view class="lookMore" @click="handleGosongsheet">查看更多</view>
 				</view>
 			</template>
 			
@@ -123,6 +123,12 @@
 						title: "请稍后尝试"
 					})
 				}
+			},
+			//跳转去歌单广场
+			handleGosongsheet: function(){
+				uni.navigateTo({
+					url:"/pages/home/songsheet"
+				})
 			}
 	
 		},

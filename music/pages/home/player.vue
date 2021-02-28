@@ -149,8 +149,10 @@
 				const playerList = this.playerList.length && this.playerList
 				//限制
 				const index = (currentIndex + n < 0 ? playerList.length-1 : currentIndex + n) % playerList.length
-				console.log(index);
+				// console.log(index);
+				//保存索引
 				await this.setCurrentPlaySongIndex(index)
+				//获取对应歌曲的ID 名字...
 				const {
 					id,
 					name,
@@ -159,6 +161,7 @@
 					al,
 					album,
 				} = playerList[index]
+				//发起请求歌词
 				const r = await this.getMusicUrl({
 					id,
 					name,
