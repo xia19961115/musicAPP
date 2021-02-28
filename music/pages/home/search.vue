@@ -237,7 +237,7 @@
 					// 绑定index是让数据在数据中心能知道下一首
 					index,
 					//知道对应页面的歌曲列表
-					list:this.songsList
+					list:this.searchLists
 				})
 				//请求
 				const r = await this.$store.dispatch('getMusicUrl',{
